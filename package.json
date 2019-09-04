@@ -1,0 +1,31 @@
+{
+  "name": "stack-mern",
+  "version": "1.0.0",
+  "description": "Esto es un ejemplo del stack MERN",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd src && node index.js",
+    "dev": "cd src && nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/san7iix/stackMERN.git"
+  },
+  "keywords": [
+    "MERN",
+    "stack"
+  ],
+  "author": "Santiago Martínez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/san7iix/stackMERN/issues"
+  },
+  "homepage": "https://github.com/san7iix/stackMERN#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
