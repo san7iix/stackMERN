@@ -14,15 +14,15 @@ router.get('/:id',async(req,res)=>{
 })
 
 router.post('/', async (req,res)=>{
-  const {title, description } = req.body
-  const task = new Task({title, description})
+  const {titulo, descripcion } = req.body
+  const task = new Task({titulo, descripcion})
   await task.save()  
-  res.json({status:'ok'})
+  res.json({status:'Tarea almacenada'})
 })
 
 router.put('/:id', async(req,res)=>{
-  const {title, description} = req.body
-  const newTask = {title,description}
+  const {titulo, descripcion} = req.body
+  const newTask = {titulo,descripcion}
   await Task.findByIdAndUpdate(req.params.id, newTask)
   console.log(req.params.id)
   res.json({status:'Tarea actualizada'})
